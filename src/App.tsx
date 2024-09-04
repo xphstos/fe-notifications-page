@@ -27,8 +27,8 @@ function App() {
 
   return (
     <main class="grid min-h-dvh md:place-items-center md:p-8">
-      <section class="w-[min(45rem,100%)] bg-white shadow-none md:shadow-sm">
-        <header class="sticky top-0 z-10 flex items-center justify-between gap-4 bg-gradient-to-b from-white from-60% to-white/0 to-100% px-8 pb-6 pt-8 md:static">
+      <section class="w-full overflow-clip bg-white shadow-none md:w-[min(45rem,100%)] md:rounded-2xl md:shadow-sm">
+        <header class="sticky top-0 z-10 flex items-center justify-between gap-4 bg-gradient-to-b from-white from-60% to-white/0 to-100% px-4 py-5 md:px-8 md:pb-6 md:pt-8">
           <h1 class="flex items-center gap-2 text-[1.5rem] font-extrabold">
             Notifications{' '}
             {unreadTotal() ? (
@@ -45,7 +45,7 @@ function App() {
             Mark all as read
           </button>
         </header>
-        <ul class="space-y-2 px-8 pb-8">
+        <ul class="space-y-2 px-4 pb-4 md:px-8 md:pb-8">
           {notifications().map((n) => {
             return (
               <li>
