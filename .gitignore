@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 notifications-page-main/
+public/CNAME
